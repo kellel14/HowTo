@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--page for Mining-->
+
+<body>
+<div th:insert="base :: navbar"></div>
+<!--card columns; card groups with footer, automatically line up-->
+<!--insert mineral type images-->
+<div>
+    <!--add caption/title here-->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Coal</h5>
+                <p class="card-text">Anywhere underground, but most abundant below layer 40</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Torches, furnace fuel.</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Iron</h5>
+                <p class="card-text">Anywhere underground, but most abundant below layer 40.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Crafting tools and armour and building railways.</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Gold</h5>
+                <p class="card-text">Deep underground, below layer 30.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Crafting, brewing potions, powered rails.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!--misc- table for what to mine-->
+
+<table width="560" border="1">
+    <caption>
+        Ores in Minecraft
+    </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">Ore</th>
+        <th scope="col">Where to Look</th>
+        <th scope="col">Uses</th>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/coal.png" width="48" height="48" alt="coal" /></td>
+        <td>Coal</td>
+        <td>Anywhere underground, but most abundant below layer 40.</td>
+        <td>Torches, furnace fuel.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/iron.png" width="48" height="48" alt="iron ore" /></td>
+        <td>Iron</td>
+        <td>Anywhere underground, but most abundant below layer 40.</td>
+        <td>Crafting tools and armour and building railways.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/gold.png" width="48" height="48" alt="gold ore" /></td>
+        <td>Gold</td>
+        <td>Deep underground, below layer 30.</td>
+        <td>Crafting, brewing potions, powered rails.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/redstone.png" width="48" height="48" alt="redstone" /></td>
+        <td>Redstone</td>
+        <td>Below layer 16.</td>
+        <td>Redstone circuits, crafting, potion brewing.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/lapis.png" width="48" height="48" alt="lapis" /></td>
+        <td>Lapis lazuli</td>
+        <td>Below layer 30, most abundant near layer 12.</td>
+        <td>Decorative</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/emerald.png" width="48" height="48" alt="Emerald Ore" /></td>
+        <td>Emerald</td>
+        <td>Below layer 30, only in &quot;extreme hill&quot; terrain.</td>
+        <td>Trading with Villagers.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/diamond.png" width="48" height="48" alt="diamond" /></td>
+        <td>Diamond</td>
+        <td>Below layer 16.</td>
+        <td>The best armour, tools and weapons.</td>
+    </tr>
+    <tr>
+        <td><img src="../reference/images/minerals/netherquartz.png" width="48" height="48" alt="Nether Quartz" /></td>
+        <td>Nether Quartz</td>
+        <td>In the Nether.</td>
+        <td>Quartz blocks and daylight detectors.</td>
+    </tr>
+</table>
