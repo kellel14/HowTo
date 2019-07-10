@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no"/>
+    <title>How To...</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <!--my css -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+    <div th:insert="base :: bootstrap"></div>
+    <div th:insert="base :: myStylesheet"></div>
 </head>
 
 <!--page for Mining-->
 
 <body>
 <div th:insert="base :: navbar"></div>
+<div th:insert="base :: jumbotron"></div>
 <!--card columns; card groups with footer, automatically line up-->
 <!--insert mineral type images-->
 <div>
     <!--add caption/title here-->
     <div class="card-deck">
         <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/c_scale,w_200/v1562725833/minecraft%20items/dhjbayhqpl1lummxieti.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Coal</h5>
                 <p class="card-text">Anywhere underground, but most abundant below layer 40</p>
@@ -25,7 +38,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/c_scale,w_200/v1562725894/minecraft%20items/hqdefault_xiq2ai.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Iron</h5>
                 <p class="card-text">Anywhere underground, but most abundant below layer 40.</p>
@@ -35,7 +48,7 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/c_scale,w_200/v1562725953/minecraft%20items/hqdefault_ppfn9z.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Gold</h5>
                 <p class="card-text">Deep underground, below layer 30.</p>
@@ -45,70 +58,113 @@
             </div>
         </div>
     </div>
-</div>
+    <br>
+    <div class="card-deck">
+        <div class="card">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/c_scale,r_0,w_200/v1562726260/minecraft%20items/oreRedstone_v4ikb3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Redstone</h5>
+                <p class="card-text">Below layer 16.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Redstone circuits, crafting, potion brewing.</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/c_scale,w_200/v1562726315/minecraft%20items/Lapis_Lazuli_Ore_cra1d2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Lapis Lazuli</h5>
+                <p class="card-text">Below layer 30, most abundant near layer 12.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Decorative</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://res.cloudinary.com/kellel14/image/upload/v1562726139/minecraft%20items/minecraft_emerald_png_877457_zfjytn.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Emerald</h5>
+                <p class="card-text">Below layer 30, most abundant near layer 12.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Trading with villagers</small>
+            </div>
+        </div>
+    </div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
 
 
 <!--misc- table for what to mine-->
 
-<table width="560" border="1">
-    <caption>
-        Ores in Minecraft
-    </caption>
-    <tr>
-        <th scope="col">&nbsp;</th>
-        <th scope="col">Ore</th>
-        <th scope="col">Where to Look</th>
-        <th scope="col">Uses</th>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/coal.png" width="48" height="48" alt="coal" /></td>
-        <td>Coal</td>
-        <td>Anywhere underground, but most abundant below layer 40.</td>
-        <td>Torches, furnace fuel.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/iron.png" width="48" height="48" alt="iron ore" /></td>
-        <td>Iron</td>
-        <td>Anywhere underground, but most abundant below layer 40.</td>
-        <td>Crafting tools and armour and building railways.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/gold.png" width="48" height="48" alt="gold ore" /></td>
-        <td>Gold</td>
-        <td>Deep underground, below layer 30.</td>
-        <td>Crafting, brewing potions, powered rails.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/redstone.png" width="48" height="48" alt="redstone" /></td>
-        <td>Redstone</td>
-        <td>Below layer 16.</td>
-        <td>Redstone circuits, crafting, potion brewing.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/lapis.png" width="48" height="48" alt="lapis" /></td>
-        <td>Lapis lazuli</td>
-        <td>Below layer 30, most abundant near layer 12.</td>
-        <td>Decorative</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/emerald.png" width="48" height="48" alt="Emerald Ore" /></td>
-        <td>Emerald</td>
-        <td>Below layer 30, only in &quot;extreme hill&quot; terrain.</td>
-        <td>Trading with Villagers.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/diamond.png" width="48" height="48" alt="diamond" /></td>
-        <td>Diamond</td>
-        <td>Below layer 16.</td>
-        <td>The best armour, tools and weapons.</td>
-    </tr>
-    <tr>
-        <td><img src="../reference/images/minerals/netherquartz.png" width="48" height="48" alt="Nether Quartz" /></td>
-        <td>Nether Quartz</td>
-        <td>In the Nether.</td>
-        <td>Quartz blocks and daylight detectors.</td>
-    </tr>
-</table>
+<!--<table width="560" border="1">-->
+<!--    <caption>-->
+<!--        Ores in Minecraft-->
+<!--    </caption>-->
+<!--    <tr>-->
+<!--        <th scope="col">&nbsp;</th>-->
+<!--        <th scope="col">Ore</th>-->
+<!--        <th scope="col">Where to Look</th>-->
+<!--        <th scope="col">Uses</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/coal.png" width="48" height="48" alt="coal" /></td>-->
+<!--        <td>Coal</td>-->
+<!--        <td>Anywhere underground, but most abundant below layer 40.</td>-->
+<!--        <td>Torches, furnace fuel.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/iron.png" width="48" height="48" alt="iron ore" /></td>-->
+<!--        <td>Iron</td>-->
+<!--        <td>Anywhere underground, but most abundant below layer 40.</td>-->
+<!--        <td>Crafting tools and armour and building railways.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/gold.png" width="48" height="48" alt="gold ore" /></td>-->
+<!--        <td>Gold</td>-->
+<!--        <td>Deep underground, below layer 30.</td>-->
+<!--        <td>Crafting, brewing potions, powered rails.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/redstone.png" width="48" height="48" alt="redstone" /></td>-->
+<!--        <td>Redstone</td>-->
+<!--        <td>Below layer 16.</td>-->
+<!--        <td>Redstone circuits, crafting, potion brewing.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/lapis.png" width="48" height="48" alt="lapis" /></td>-->
+<!--        <td>Lapis lazuli</td>-->
+<!--        <td>Below layer 30, most abundant near layer 12.</td>-->
+<!--        <td>Decorative</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/emerald.png" width="48" height="48" alt="Emerald Ore" /></td>-->
+<!--        <td>Emerald</td>-->
+<!--        <td>Below layer 30, only in &quot;extreme hill&quot; terrain.</td>-->
+<!--        <td>Trading with Villagers.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/diamond.png" width="48" height="48" alt="diamond" /></td>-->
+<!--        <td>Diamond</td>-->
+<!--        <td>Below layer 16.</td>-->
+<!--        <td>The best armour, tools and weapons.</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img src="../reference/images/minerals/netherquartz.png" width="48" height="48" alt="Nether Quartz" /></td>-->
+<!--        <td>Nether Quartz</td>-->
+<!--        <td>In the Nether.</td>-->
+<!--        <td>Quartz blocks and daylight detectors.</td>-->
+<!--    </tr>-->
+<!--</table>-->

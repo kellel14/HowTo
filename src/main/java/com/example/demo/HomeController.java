@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
     @RequestMapping
+    public String pageZero(){
+        return "/";
+    }
+    @RequestMapping
     public String mainPage(){
         return "/index1";
     }
